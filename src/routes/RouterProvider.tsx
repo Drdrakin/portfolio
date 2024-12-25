@@ -6,6 +6,8 @@ interface PageProps {
     element: JSX.Element;
 }
 
+// Typescript shenanigans: 
+// This means routes is an array where each element must conform to the used interface.
 const routes: PageProps[] = [
     {
         path: "/",
@@ -13,10 +15,9 @@ const routes: PageProps[] = [
     },
 ];
 
-// Pass routes to the router
 const router = createBrowserRouter(routes);
 
-const Routes = () => {
+const Routes: React.FC = () => {
     return <RouterProvider router={router} />;
 };
 

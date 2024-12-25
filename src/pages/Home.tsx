@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Home.module.css';
 
 const ProfilePage: React.FC = () => {
 
@@ -8,15 +7,14 @@ const ProfilePage: React.FC = () => {
     let avatarUrl = "https://via.placeholder.com/100";
 
     return (
-        <div className={styles.container}>
-            <div className={styles.profileCard}>
-                <img src={avatarUrl} alt={`${username}'s avatar`} className={styles.avatar} />
-                <h1 className={styles.username}>{username}</h1>
-                <p className={styles.bio}>{bio}</p>
+        <div>
+            <div >
+                <img src={avatarUrl} alt={`${username}'s avatar`} />
+                <h1 className="text-3xl font-bold underline">{username}</h1>
+                <p>{bio}</p>
             </div>
         </div>
     );
 };
-
 
 export default ProfilePage;
