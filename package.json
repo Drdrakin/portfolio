@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --config config/vite.config.js",
     "build": "tsc -p config/tsconfig.app.json && vite build --config config/vite.config.js",
+    "tailwind": "npx tailwindcss -c config/tailwind.config.js -i src/styles/input.css -o src/styles/output.css --watch",
     "lint": "eslint . --config config/eslint.config.js",
     "preview": "vite preview --config config/vite.config.js"
   },
