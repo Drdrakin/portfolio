@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ProfilePage: React.FC = () => {
 
     return (
@@ -9,7 +7,7 @@ const ProfilePage: React.FC = () => {
         </div>
         <div className="p-4">
         <p className="text-gray-700">This is a simple card component styled with Tailwind CSS.</p>
-        <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Click Me</button>
+        <button className="btn btn-error">Click Me</button>
         </div>
     </div>
     );

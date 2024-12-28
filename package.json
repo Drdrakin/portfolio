@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --config config/vite.config.js",
+    "dev": "concurrently \"vite --config config/vite.config.js\" \"npx tailwindcss -c config/tailwind.config.js -i src/styles/input.css -o src/styles/output.css --watch\"",
     "build": "tsc -p config/tsconfig.app.json && vite build --config config/vite.config.js",
     "tailwind": "npx tailwindcss -c config/tailwind.config.js -i src/styles/input.css -o src/styles/output.css --watch",
     "lint": "eslint . --config config/eslint.config.js",
@@ -21,6 +21,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.1",
     "daisyui": "^4.12.22",
     "eslint": "^9.15.0",
     "eslint-plugin-react-hooks": "^5.0.0",
