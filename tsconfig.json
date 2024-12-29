@@ -2,10 +2,9 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "moduleResolution": "node",
-    "target": "esnext",
-    "module": "esnext",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": []
   },
   "files": [],
   "references": [
