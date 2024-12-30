@@ -2,6 +2,7 @@ import Footer from '../components/Footer';
 import Card from '../components/Card';
 import SkillsSection from '../components/SkillsSection';
 import HeroSection from '../components/HeroSection';
+import StickyHeader from '../components/Header';
 
 const Home: React.FC = () => {
   return (
@@ -12,10 +13,12 @@ const Home: React.FC = () => {
         imageSrc="laptop-books.jpg"
       />
 
+      <StickyHeader />
+
       <SkillsSection />
 
       {/* Experience */}
-      <section className="bg-gray-800 py-20" id="experience">
+      <section className="bg-gray-800 py-10" id="experience">
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-semibold text-orange-400">Experience</h2>
           <p className="text-lg text-gray-400 mt-4">Where I've worked</p>
@@ -53,7 +56,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Projects */}
-      <section className="bg-gray-900 py-20" id="projects">
+      <section className="bg-gray-900 py-10" id="projects">
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-semibold text-orange-400">Projects</h2>
           <p className="text-lg text-gray-400 mt-4">My recent work</p>
@@ -71,7 +74,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Education Section */}
-      <section className="bg-gray-800 py-20" id="education">
+      <section className="bg-gray-800 py-10" id="education">
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-semibold text-orange-400">Education</h2>
           <p className="text-lg text-gray-400 mt-4">Where I studied</p>
@@ -109,7 +112,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact */}
-      <section className="bg-gray-900 py-20" id="contact">
+      <section className="bg-gray-900 py-10" id="contact">
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-semibold text-orange-400">Contact</h2>
           <p className="text-lg text-gray-400 mt-4 mb-3">Feel free to reach out to me!</p>
