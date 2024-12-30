@@ -1,9 +1,9 @@
-import { FC } from "react";
+import React, { FC } from "react";
 
 interface CardProps {
   title: string;
   description?: string;
-  icon?: JSX.Element;
+  icon?: React.ReactNode;
   link?: string;
 }
 
