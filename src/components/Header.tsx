@@ -16,11 +16,11 @@ const Header: React.FC = () => {
 
   return (
     <header 
-      className={`fixed w-full top-0 left-0 z-50 bg-black text-white transition-all duration-300 ${isSticky ? 'shadow-md py-2' : 'py-4'}`}
+      className={`fixed w-full top-0 left-0 z-50 bg-black text-white transition-all duration-300 ${isSticky ? 'lg:py-4 sm:py-2':'lg:py-2 sm:py-1'}`}
     >
       <div className="container mx-auto flex justify-between items-center px-4">
         <h1 className="text-2xl font-bold">
-          <Link to="/" className="text-orange-400">Guilherme Alves</Link>
+          <Link to="/" className="text-orange-400 md:py-0">Guilherme Alves</Link>
         </h1>
         
         <nav className="hidden md:flex gap-8">
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
         </nav>
         
         <div className="dropdown dropdown-end  md:hidden">
-          <div tabIndex={0} role="button" className="btn bg-black hover:bg-black border-0 text-white text-lg">Contact</div>
+          <div tabIndex={0} role="button" className="btn bg-black hover:bg-black border-0 text-white text-lg my-0 py-0">Contact</div>
           <ul tabIndex={0} className="dropdown-content menu bg-white rounded-box z-[1] w-40 p-2 shadow">
             <li>
               <a 
